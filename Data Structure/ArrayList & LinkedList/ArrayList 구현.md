@@ -193,10 +193,107 @@ public boolean contains(Object value) {
 
 ### 요소 대체 `set(int index, E value)`
 
+`set` 메소드는 기존 데이터를 새로운 데이터로 교체하는 것으로 매개변수로 받은 인덱스 위치의 데이터를 교체해주면 된다.
+
 ```java
 @Override
 public void set(int index, E value) {
   if (index >= size || index < 0) throw new IndexOutOfBoundsException();
   else array[index] = value;
+}
+```
+
+## 요소 삭제, remove
+
+### 요소 기본 위치 삭제, `remove(index)` 구현
+
+특정 위치의 요소나 어떤 객체를 찾아 삭제하는 것은 다음과 같다.
+앞서 `add` 메소드에서 구현했던 것을 거꾸로 하면 된다.
+
+![image](https://user-images.githubusercontent.com/66655578/166964184-07a9d253-30fa-498c-a4cc-56f81820cdbc.png)
+
+```java
+@Override
+public E remove(int index) {
+ 
+	if (index >= size || index < 0) throw new IndexOutOfBoundsException();
+ 
+	E element = (E) array[index];	// 삭제될 요소 임시로 담음
+	array[index] = null;
+    
+	// 삭제한 요소의 뒤의 모든 요소들을 한 칸씩 당김
+	for (int i = index; i < size - 1; i++) {
+		array[i] = array[i + 1];
+		array[i + 1] = null;
+	}
+	size--;
+	resize();	// 마지막에 리사이징
+	return element;
+}
+```
+
+
+### 요소 객체 삭제, `remove(Object value)` 구현
+
+`remove(Object value)` 메소드는 특정 요소를 찾아 삭제하는 것이다.
+`indexOf` 메소드로 찾아 삭제하면 쉽다. 찾은 후엔 해당 인덱스로 앞서 작성한 코드 `remove(int index)` 로 재활용한다.
+
+```java
+@Override
+public boolean remove(Object value) {
+	// 삭제하고자 하는 요소의 인덱스 찾기
+	int index = indexOf(value);
+
+	// -1이라면 array에 요소가 없다는 의미이므로 false 반환
+	if (index == -1) {
+		return false;
+	}
+
+	// index 위치에 있는 요소를 삭제
+	remove(index);
+	return true;
+}
+```
+
+## 각종 기능, size isEmpty clear 구현
+
+### ArrayList 의 사이즈, `size`
+
+현재 사이즈를 반환해주기만 하면 된다.
+
+```java
+@Override
+public int size() {
+	return size;
+}
+```
+
+### 비었는지 여부, `isEmpty`
+
+해당 메소드는 ArrayList 의 요소가 하나도 없는지 여부를 반환한다.
+size 수를 비교하여 반환해주면 된다.
+
+```java
+@Override
+public boolean isEmpty() {
+	return size == 0;
+}
+```
+
+### 요소 비우기, `clear`
+
+`clear` 메소드는 ArrayList 의 모든 요소를 비우는 작업이다.
+배열의 모든 요소를 null 로 초기화하고 사이즈를 0으로 해주고 리사이징 해준다.
+
+```java
+@Override
+public void clear() {
+	// 모두 null 처리
+	for (int i = 0; i < size; i++) {
+		array[i] = null;
+	}
+	
+	size = 0;
+	resize();
 }
 ```
