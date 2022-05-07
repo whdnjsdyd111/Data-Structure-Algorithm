@@ -335,8 +335,7 @@ public boolean isEmpty() {
 public void clear() {
 		for (Node<E> x = head; x != null;) {
 			Node<E> next= x.next;
-			x.data = null;
-			x.next = null;
+			x.clear();
 			x = next;
 		}
 		
