@@ -55,7 +55,10 @@ public int size() {
 
 ```java
 	public E push(E item) {
-		if(isFull()) throw new StackOverflowError();
+		if(isFull()) {
+			System.out.println("스택 오버플로우!!");
+			return null;
+		}
 		
 		stack[++top] = item;
 		return item;
@@ -63,7 +66,7 @@ public int size() {
 ```
 
 배열의 마지막 위치에 item 릇 삽입한다.
-스택이 꽉 찼다면, `StackOverflowError` 예외를 발생시킨다.
+스택이 꽉 찼다면, 오버플로우를 알린다.
 
 ## 요소 삭제, pop 메소드 구현
 
@@ -73,14 +76,17 @@ public int size() {
 
 ```java
 public E pop() {
-  if(isEmpty()) throw new EmptyStackException();
+  if(isEmpty()) {
+  	System.out.println("스택 언더플로우!!");
+	return null;
+  }
   
   Object obj = stack[top--];
   return (E) obj;
 }
 ```
 
-배열이 빈 상태에서 요소를 제거하려고 한다면 `EmptyStackException` 을 발생시킨다.
+배열이 빈 상태에서 요소를 제거하려고 한다면 스택 언더플로우를 알린다.
 
 ## 요소 얻기, peek 메소드 구현
 
