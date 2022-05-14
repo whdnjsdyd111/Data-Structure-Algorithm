@@ -39,11 +39,11 @@ public boolean isFull() {
 }
 ```
 
-사이즈를 반환하는 함수는 다음과 같다.
+현재 요소의 개수를 반환하는 함수는 다음과 같다.
 
 ```java
 public int size() {
-  return size;
+  return top + 1;
 }
 ```
 
