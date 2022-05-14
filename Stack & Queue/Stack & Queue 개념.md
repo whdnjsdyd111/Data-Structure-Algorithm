@@ -24,7 +24,7 @@
 
 1. Linear Queue 선형 큐
 
-![image](https://user-images.githubusercontent.com/66655578/167885597-1b6d1f7b-d134-4b07-a673-4d7461124101.png)
+![image](https://user-images.githubusercontent.com/66655578/168409234-a9bbdd7d-fa38-44c3-bc2b-ef3eed66a819.png)
 
 선형 큐는 선형 구조로 `front` 와 `rear` 를 증가만 시키는 방식이다.
 포인터가 끝에 도달해있다면 새 요소를 더 이상 삽입할 수 없기 때문에 새로 초기화 해야한다.
