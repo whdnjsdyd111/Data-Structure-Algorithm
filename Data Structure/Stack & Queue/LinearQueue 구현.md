@@ -1,4 +1,4 @@
-Queue 구현
+LinearQueue 구현
 ==========
 
 [Queue.java](https://github.com/whdnjsdyd111/Data-Structure-Algorithm/blob/main/Data%20Structure/Stack%20%26%20Queue/Queue.java)
