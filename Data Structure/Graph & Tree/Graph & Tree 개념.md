@@ -7,7 +7,10 @@ Graph 개념
 위와 같은 지형이 있을 때 (A, B, C, D) 지점에서 출발하여 a-f 까지의 모든 다리를 한번씩 건널 수 있는지의 문제이다.
 
 그래프는 소셜 미디어 플랫폼에서 사람들의 네트워크와 같이 연결된 데이터를 저장하거나 위와 같은 상황처럼 객체간의 연결에 대한 데이터 구조이다.
-**정점(Vertex)**와 그 정점들을 연결하는 **간선(Edge)**으로 이루어져 있다.
+**정점(Vertex)** 와 그 정점들을 연결하는 **간선(Edge)** 으로 이루어져 있다.
+일반적으로 그래프를 `G=(V,E)` 로 표현한다.
+V(G) 는 그래프 G 의 정점들 집합
+E(G) 는 그래프 G 의 간선들 집합을 나타낸다.
 
 ## Graph 관련 용어
 
@@ -31,3 +34,39 @@ Graph 개념
 - 루트(최상단) 노드의 개념, 부모-자식 관계의 개념이 존재하지 않음
 - 순회 방법에는 DFS(깊이우선탐색), BFS(너비우선탐색) 등이 존재한다. 이때 스택과 큐의 자료구조를 이용한다.
 - 순환, 비순환 모두 가능하며, 자체 간선(self-loop)도 가능하다.
+
+## Graph 종류
+
+### 무방향 그래프(Undirected Graph)
+
+정점들 간의 간선을 나타낼 때 방향이 없는 그래프다.
+간선 (x, y) 는 (y, x) 와 동일하다.
+
+![image](https://user-images.githubusercontent.com/66655578/169570580-dd1a3fd9-334c-46be-a8d9-4a0702e710f4.png)
+
+### 방향 그래프(Directed Graph)
+
+정점들 간의 간선을 나타낼 때 방향이 있는 그래프다.
+간선 <x, y> 는 <y, x> 와 다르다.
+
+![image](https://user-images.githubusercontent.com/66655578/169572149-897aed0c-46e1-4811-83ce-837974bb5521.png)
+
+V(G) = {A, B, C, D}
+E(G) = { <B,A>, <A,C>, <C,D>, <D,B>, <B,D> }
+
+### 연결 그래프(Connected Graph)
+
+### 다중 그래프(Multi Graph)
+
+### 부분 그래프(Sub Graph)
+
+### 완전 그래프(Completed Graph)
+
+### 가중 그래프(Weighted Graph)
+
+## Graph 표현
+
+### 인접행렬(Adjacency Matrix)
+
+### 인접리스트(Adjacency List)
+
