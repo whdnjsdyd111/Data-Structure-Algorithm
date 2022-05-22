@@ -56,13 +56,39 @@ E(G) = { <B,A>, <A,C>, <C,D>, <D,B>, <B,D> }
 
 ### 연결 그래프(Connected Graph)
 
-### 다중 그래프(Multi Graph)
+무방향 그래프의 모든 정점 쌍에 대해 항상 경로가 존재하는 그래프이다.
+모든 노드가 빠짐 없이 간선에 의해 연결되어 있는 상태이다. 대표적으로 Tree 가 있다.
+
+![image](https://user-images.githubusercontent.com/66655578/169696235-74fe4d57-1247-4850-87bb-89c415004537.png)
+
+### 비연결 그래프(Disconnected Graph)
+
+무방향 그래프의 특정 정점 사이에 경로가 존재하지 않는 그래프이다.
+모든 노드 중 간선에 연결되지 않은 노드가 있는 상태이다.
+
+![image](https://user-images.githubusercontent.com/66655578/169696289-c9d092c3-df2f-48bb-8ad2-592818f4dc79.png)
 
 ### 부분 그래프(Sub Graph)
 
+왼쪽 그래프가 오른쪽 그래프에 포함될 때 부분 그래프라 한다.
+
+![image](https://user-images.githubusercontent.com/66655578/169700993-dc97e930-7446-4712-a77e-d829fb662fc1.png)
+
 ### 완전 그래프(Completed Graph)
 
-### 가중 그래프(Weighted Graph)
+간선을 최대한으로 가진 그래프이다.
+정점이 n개인 그래프가 있다고 하자.
+무방향 그래프 최대 간선 수 : n (n - 1) / 2
+방향 그래프 최대 간선 수   : n (n 0 1)
+
+![image](https://user-images.githubusercontent.com/66655578/169701256-9494d699-71c4-4d8e-9157-dab9f49ac61a.png)
+
+### 가중치 그래프(Weighted Graph)
+
+가중치 그래프는 두 정점 간의 이동하는데 드는 비용을 나타내는 그래프이다.
+
+![image](https://user-images.githubusercontent.com/66655578/169701322-0b9b66fb-5a7a-4fba-bd84-5aeaddf37eee.png)
+
 
 ## Graph 표현
 
