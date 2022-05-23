@@ -196,6 +196,12 @@ Tree 개념
 
 ![image](https://user-images.githubusercontent.com/66655578/169838031-9d1f600a-2bc4-47e6-9fba-f3241421699f.png)
 
+### 포화 이진 트리(Perfect Binary Tree)
+
+포화 이진 트리는 각 레벨의 노드가 꽉 차있는 노드를 의미한다.
+
+![image](https://user-images.githubusercontent.com/66655578/169839239-6e6c5896-2690-453b-8a8a-09fea10a4bd9.png)
+
 ### B-Tree
 
 B-트리는 M-way 라는 이진 트리와 유사한 다중 방식 트리의 변형이다.
@@ -203,3 +209,42 @@ B-트리는 M-way 라는 이진 트리와 유사한 다중 방식 트리의 변�
 단일 노드에 많은 수의 키를 저장할 수 있어, 트리의 높이를 최소화할 수 있다.
 
 ![image](https://user-images.githubusercontent.com/66655578/169838382-081e7ced-b036-4cdd-945e-b79c205ba18b.png)
+
+## Tree 표현
+
+### 인접행렬
+
+![image](https://user-images.githubusercontent.com/66655578/169840866-0379b87a-4f4e-4a23-9d29-c25b960362cb.png)
+
+![image](https://user-images.githubusercontent.com/66655578/169841292-3f266a5a-d786-42fd-a6dc-09c1fdf65984.png)
+
+주로 포화 이진 트리나 완전 이진 트리의 경우 1차원 배열을 사용한다.
+
+![image](https://user-images.githubusercontent.com/66655578/169842014-9197b1de-c794-40ef-a7ff-93d607901208.png)
+
+트리는 2차원으로도 표현이 가능하며, `i` 노드가 있을 때 `i` 의 왼쪽노드는 `tree[i][0]` 오른쪽은 `tree[i][1]` 에 저장한다.
+자식 노드가 없다면 -1 을 저장한다.
+
+### 인접리스트
+
+트리의 인접리스트는 그래프에서 구현되는 인접리스트와 동일하다.
+
+## Tree 탐색
+
+### 중위 순회(Inorder Traverse)
+
+![inorder](https://user-images.githubusercontent.com/66655578/169843955-241847d4-1bc7-4c4c-b96f-102cd9ecceb6.gif)
+
+L-Root-R 순서로 탐색을 한다.
+
+### 전위 순회(Preorder Traverse)
+
+![preorder](https://user-images.githubusercontent.com/66655578/169844100-dcde08af-cb49-4704-bde8-fc061caf5d5b.gif)
+
+Root-L-R 순서로 탐색한다.
+
+### 후위 순회(Postorder Traverse)
+
+![postorder](https://user-images.githubusercontent.com/66655578/169844186-b197d2f4-8dad-41f3-81bd-894542eee795.gif)
+
+L-R-Root 순서로 순회한다.
