@@ -60,3 +60,35 @@ public class GraphListVertex<V, E> extends Vertex<V> {
 ```
 
 ![image](https://user-images.githubusercontent.com/66655578/170817933-9b2b2d8e-1148-43db-a99f-33e930d51dc5.png)
+
+### 간선 포함여부, 추가, 삭제, 얻기 containsEdge, addEdge, removeEdge, getEdge
+
+추가 기능을 부여하기 전에, 해당 간선이 리스트에 이미 추가돼 있는지 여부를 먼저 파악하고 추가해야한다.
+
+```java
+// 인접 간선 리스트에 간선 포함 여부
+public boolean containsEdge(Edge<V, E> e) {
+  return adjacencies.contains(e);
+}
+
+// 간선 포함 여부 확인 후 간선 추가
+public void addEdge(Edge<V, E> e) {
+  if(!containsEdge(e)) adjacencies.add(e);
+}
+
+// 간선을 삭제하고 삭제 여부 반환
+public boolean removeEdge(Edge<V, E> e) {
+  return adjacencies.remove(e);
+}
+
+// 인접 간선 리스트를 순회하여 동일한 간선 객체 반환
+public Edge<V, E> getEdge(Edge<V, E> e) {
+  Iterator<Edge<V, E>> edges = adjacencies.iterator();
+  while(edges.hasNext()) {
+    Edge<V, E> edge = edges.next();
+    if(e.equals(Edge)) return edge;
+  }
+  return null;
+}
+```
+
