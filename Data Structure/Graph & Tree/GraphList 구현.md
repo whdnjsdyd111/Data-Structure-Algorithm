@@ -92,3 +92,60 @@ public Edge<V, E> getEdge(Edge<V, E> e) {
 }
 ```
 
+### 부가 기능 degree, adjacentEdges, adjacentVertices
+
+부가적으로 한 정점의 차수, 인접 정점 반복자, 인접 간선 반복자를 반환해주는 메소드를 구현하자.
+
+먼저 차수는 정점으로부터의 간선 개수이므로 현 리스트의 사이즈를 반환해주면 된다.
+
+```java
+public int degree() {
+  return adjacencies.size();
+}
+```
+
+간선 반복자는 단순히 간선 리스트의 반복자를 리턴해준다.
+
+```java
+public Iterator<Edge<V, E>> adjacentEdges() {
+  return adjacencies.iterator();
+}
+```
+
+그 다음으로는 인접 정점에 대한 반복자를 반환하는 것이다.
+현재 간선은 `here` (V1) 과 `there` (V2) 정점에 대한 객체이다.
+그러므로 간선 리스트의 간선에 대한 반복자를 통해 현재 `here` 과 현재 정점이 같다면 이와 다른 정점인 `there` 을, 아니라면 `here` 인 다른 정점을 반복자로 반환해주는 것이다.
+
+![image](https://user-images.githubusercontent.com/66655578/170833850-c82bbae0-bc7d-4a3f-8927-95b7b3f3004e.png)
+
+```java
+public Iterator<V> adjacentVertices() {
+  List<V> list = new LinkedList<>();
+  Iterator<Edge<V, E>> edges = adjacentEdges();
+  while(edges.hasNext()) {
+    Edge<V, E> e = edges.next();
+    if(label().equals(e.here())) list.add(e.there());
+    else list.add(e.here());
+  }
+  return list.iterator();
+}
+```
+
+이와 별개로는 간선 리스트 정보와 인접 정점에 대한 정보 표기이다.
+
+```java
+public String verticesToString() {
+  StringBuffer sb = new StringBuffer();
+  for(Edge<V, E> e : adjacencies) {
+    if(label().equals(e.here())) sb.append(e.there());
+    else sb.append(e.here());
+    sb.append(", ");
+  }
+  return sb.toString();
+}
+
+@Override
+public String toString() {
+  return "<GraphListVertex: "+label()+", Vertices : " + verticesToString() + ">";
+}
+```
