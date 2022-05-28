@@ -10,8 +10,7 @@ public class Vertex<E> {
 	 */
 	protected boolean visited;
 	
-	public Vertex(E label) throws VertexKeyNullException {
-		if(label == null) throw new VertexKeyNullException();
+	public Vertex(E label) {
 		this.label = label;
 		this.visited = false;
 	}
@@ -62,13 +61,5 @@ public class Vertex<E> {
 	@Override
 	public String toString() {
 		return "<Vertex: "+label+">";
-	}
-}
-
-class VertexKeyNullException extends Exception {
-	private static final long serialVersionUID = 1L;
-
-	public VertexKeyNullException() {
-		super("VerTex is Non-Null");
 	}
 }
