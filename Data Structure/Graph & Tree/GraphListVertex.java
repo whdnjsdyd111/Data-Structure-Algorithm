@@ -89,11 +89,21 @@ public class GraphListVertex<V, E> extends Vertex<V> {
 		return adjacencies.iterator();
 	}
 	
+	public String verticesToString() {
+		StringBuffer sb = new StringBuffer();
+		for(Edge<V, E> e : adjacencies) {
+			if(label().equals(e.here())) sb.append(e.there());
+			else sb.append(e.here());
+			sb.append(", ");
+		}
+		return sb.toString();
+	}
+	
 	/**
 	 * 
 	 */
 	@Override
 	public String toString() {
-		return "<GraphListVertex: "+label()+">";
+		return "<GraphListVertex: "+label()+", Vertices : " + verticesToString() + ">";
 	}
 }
