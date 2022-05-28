@@ -20,7 +20,7 @@ public abstract class GraphList<V, E> implements Graph<V, E> {
 	 * 인접 리스트에 정점 추가
 	 */
 	@Override
-	public void add(V label) throws VertexKeyNullException {
+	public void add(V label) {
 		if(dict.containsKey(label)) return;
 		GraphListVertex<V, E> v = new GraphListVertex<V, E>(label);
 		dict.put(label, v);
