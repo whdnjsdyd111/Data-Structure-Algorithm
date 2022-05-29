@@ -316,7 +316,7 @@ public int degree(V label) {
  */
 @Override
 public void reset() {
-  // 간선들 리셋
+  // 정점들 리셋
   Iterator<GraphListVertex<V, E>> vl = dict.values().iterator();
   while(vl.hasNext()) {
     GraphListVertex<V, E> vtx = vl.next();
