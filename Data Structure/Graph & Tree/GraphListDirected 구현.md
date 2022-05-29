@@ -41,6 +41,7 @@ public boolean removeEdge(V vLabel1, V vLabel2) {
   Edge<V, E> e = new Edge<V, E>(v1.label(), v2.label(), null, true);
   return v1.removeEdge(e);
 }
+```
 
 ### 정점 삭제, remove
 
