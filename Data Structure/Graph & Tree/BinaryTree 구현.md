@@ -1,6 +1,3 @@
-BinaryTree 구현
-===============
-
 먼저, 이진 트리에 필요한 Node 를 구현한다.
 
 Node 구현
@@ -94,3 +91,14 @@ class Node<E> {
 		return element.equals(v.getElement());
 	}
 ```
+
+BinrayTree 구현
+==============
+
+### BinrayTree 클래스 및 생성자
+
+트리는 `root` 에서 왼쪽, 오른쪽으로 뻗어 나가므로 root 가 필요하다.
+추가로 size 와 `Comparator` 객체를 추가한다.
+
+이진트리는 루트에서 작으면 왼쪽, 크면 오른쪽으로 뻗어나가면서 삽입한다.
+이를 위해 객체를 삽입하기 위해서는 비교할 객체가 필요하게 된다. 그래서 `MyComparator` 비교 객체를 추가한다.
