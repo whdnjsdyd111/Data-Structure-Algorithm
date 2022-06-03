@@ -355,3 +355,130 @@ public boolean delete(E e) {
 	return delete(search(e));
 }
 ```
+
+### 깊이와 높이, height depth
+
+먼저 높이부터 살펴보자.
+
+![image](https://user-images.githubusercontent.com/66655578/171877666-a5f5e3b2-6193-41d6-9ca1-e8383c29cbfd.png)
+
+위와 같이 각각의 노드마다 높이라는 성질을 가진다.
+말 그대로 몇 층에 위치해 있다는 높이이며, 특정 노드에서 시작하여 **자식 노드가 있는 방향**으로 계속 나아가 끝에 도달했을 때의 높이를 구하면 된다.
+
+이를 재귀함수로 나타내면 구현하기 쉽다.
+
+```java
+public int height(Node<E> node) {
+	if(node == null || node.isEmpty()) return 0;
+	return 1 + Math.max(height(node.left), height(node.right));
+}
+```
+
+왼쪽 노드로 재귀함수, 오른쪽 노드로 재귀함수를 실행시켜 큰 값(가장 높은 높이)를 리턴하도록 한다.
+
+편의성을 위해 특정 값에서, 그리고 루트에서의 높이를 리턴하는 메서드를 작성하자.
+
+```java
+public int height() {
+	return height(root);
+}
+
+public int height(E e) {
+	Node<E> node = search(e);
+	if(node == null) return -1;
+	else return height(node);
+}
+```
+
+깊이 depth 를 살펴보자.
+
+![image](https://user-images.githubusercontent.com/66655578/171879750-516a0053-ac84-489d-947b-bb5a20f53388.png)
+
+깊이란, 루트에서부터 몇개의 간선을 거쳐서 도달하는지에 대한 값이다.
+그래서 위 이미지를 예로 들면, 루트로부터 2개의 간선을 거치므로 13의 depth 는 2이다.
+
+높이와는 반대로 자식으로 뻗어나가는 것이 아닌, 특정 노드로부터 **부모 방향**으로 뻗어나가서 나아간 개수를 리턴하면 된다.
+해당 기능도, 재귀함수로 쉽게 구할 수 있다.
+
+```java
+public int depth(Node<E> node) {
+	if(node.parent == null) return 0;
+	return 1 + depth(node.parent);
+}
+```
+
+편의를 위해 특정 값에서 깊이를 리턴하는 메서드도 작성하자.
+
+```java
+public int depth(E e) {
+	Node<E> node = search(e);
+	if(node == null) return -1;
+	else return depth(node);
+}
+```
+
+### 그외 편의 기능
+
+현재 사이즈를 리턴하는 메서드를 작성하자.
+
+```java
+public int size() {
+	return size;
+}
+```
+
+이진 탐색 트리를 트리 형태로 출력하는 메서드를 작성해보자.
+특정 노드를 깊이만큼 들여쓰기하고 노드의 정보를 출력한 후, 왼쪽과 오른쪽 노드를 각각 재귀함수로 문자열을 더하는 형태로 진행한다.
+
+```java
+public String treeString(Node<E> node) {
+	String s = "";
+	
+	for(int i = 0; i < depth(node); i++) {
+		s += "\t|";
+	}
+	
+	s+= ("<" + node.element + " : " + node.getHand() + ">\n");
+	
+	if(node.left != null) s += treeString(node.left);
+	if(node.right != null) s += treeString(node.right);
+	
+	return s;
+}
+```
+
+편의를 위해 루트에서 트리를 출력하는 메서드를 마지막으로 작성하자.
+
+```java
+public String treeString() {
+	return treeString(root);
+}
+```
+
+```java
+BinarySearchTree<Integer> bst = new BinarySearchTree<>(10);
+bst.insert(5);
+bst.insert(4);
+bst.insert(3);
+bst.insert(9);
+bst.insert(15);
+bst.insert(17);
+bst.insert(12);
+bst.insert(13);
+
+System.out.println(bst.treeString());
+```
+
+위 트리를 출력하면 다음과 같이 출력된다.
+
+```
+<10 : Root>
+	│<5 : L>
+	│	│<4 : L>
+	│	│	│<3 : L>
+	│	│<9 : R>
+	│<15 : R>
+	│	│<12 : L>
+	│	│	│<13 : R>
+	│	│<17 : R>
+```
