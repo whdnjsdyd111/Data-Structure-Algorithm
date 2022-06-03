@@ -347,3 +347,11 @@ public boolean delete(Node<E> node) {
 
 위 코드에서 보이듯 삭제할 노드가 root 일 때도 잘 판별하여 삭제해주자.
 그렇지 않으면 `parent[=null 임]` 에 대한 도트 연산자는 널 포인트 익셉션을 발생시킬 것이다.
+
+편의를 위해 노드가 아닌 데이터를 받아 삭제하는 메서드도 추가하자.
+
+```java
+public boolean delete(E e) {
+	return delete(search(e));
+}
+```
