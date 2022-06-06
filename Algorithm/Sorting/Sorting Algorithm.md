@@ -43,86 +43,45 @@
 
 비교 정렬은 Ω (n log n) 보다 좋은 성능을 낼 순 없다.
 
-<table class="wikitable sortable jquery-tablesorter">
-<thead><tr>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">이름</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">최선</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">평균</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">최악</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">메모리</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">안정</th>
-<th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">방식
-</th></tr></thead><tbody>
-<tr align="center">
-<td><a href="/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC" title="퀵 정렬">퀵 정렬</a>
+<table>
+<thead>
+  <tr>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">이름</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">최선</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">평균</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">최악</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">메모리</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">안정</th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="오름차순 정렬">방식</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>
+      <a href="/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC" title="퀵 정렬">퀵 정렬</a>
+    </td>
+    <td>
+      <span data-sort-value="15&nbsp;!">
+        <span class="mwe-math-element">
+          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}">
+        </span>
+      </span>
+      <br>variation is 
+      <span data-sort-value="15&nbsp;!">
+        <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363">
+        <span class="texhtml" style="font-style: italic;">n</span>
+      </span>
+    </td>
+    <td style="background:#dfd">
+      <span data-sort-value="20&nbsp;!">
+        <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+        <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+    </td>
+    <td style="background:#fdd"><span data-sort-value="25&nbsp;!">
+      <span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="15&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span><br>variation is <span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
-</td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
-</td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
-</td>
-<td style="background:#ffd"><span data-sort-value="05&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span> on average, worst case space complexity is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span>; Sedgewick variation is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span> worst case.</span>
+<td style="background:#ffd"><span data-sort-value="05&nbsp;!"><span class="mwe-math-element">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span> on average, worst case space complexity is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span>; Sedgewick variation is <span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span> worst case.</span>
 </td>
 <td style="background:#ffd">일반적인 제자리 정렬은 안정적이지 못하다. 안정판이 존재한다.
 </td>
@@ -131,47 +90,12 @@
 <tr align="center">
 <td><a href="/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC" title="합병 정렬">합병 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span><br>A hybrid <a href="https://en.wikipedia.org/wiki/Block_sort" class="extiw" title="en:Block sort">block merge sort</a> is <i>O</i>(1) mem.
 </td>
@@ -186,36 +110,7 @@
 </td>
 <td>—
 </td>
-<td style="background:#ffd"><span data-sort-value="23&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span><br> 상단 참고. 하이브리드의 경우 <span data-sort-value="23&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#ffd"><span data-sort-value="23&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span><br> 상단 참고. 하이브리드의 경우 <span data-sort-value="23&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -226,47 +121,11 @@
 <tr align="center">
 <td><a href="/wiki/%ED%9E%99_%EC%A0%95%EB%A0%AC" title="힙 정렬">힙 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span><br>모든 키가 구별되는 경우, <span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span><br>모든 키가 구별되는 경우, <span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -279,37 +138,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -320,60 +151,13 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EC%9D%B8%ED%8A%B8%EB%A1%9C%EC%86%8C%ED%8A%B8&amp;action=edit&amp;redlink=1" class="new" title="인트로소트 (없는 문서)">인트로소트</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#ffd"><span data-sort-value="05&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span></span>
+<td style="background:#ffd"><span data-sort-value="05&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span></span>
 </td>
 <td style="background:#fdd">아니오
 </td>
@@ -382,53 +166,11 @@
 <tr align="center">
 <td><a href="/wiki/%EC%84%A0%ED%83%9D_%EC%A0%95%EB%A0%AC" title="선택 정렬">선택 정렬</a>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -441,33 +183,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -480,33 +198,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -517,37 +211,11 @@
 <tr align="center">
 <td><a href="/wiki/%EC%85%B8_%EC%A0%95%EB%A0%AC" title="셸 정렬">셸 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#ffd"><span data-sort-value="23&nbsp;!">Depends on gap sequence</span>
 </td>
-<td style="background:#ffd"><span data-sort-value="23&nbsp;!">Depends on gap sequence;<br>best known is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{1.25}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>1.25</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{1.25}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbf64515478331b8b655b5307576afcaeff3b297" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.55ex; height:2.676ex;" alt="{\displaystyle n^{1.25}}"></span></span>
+<td style="background:#ffd"><span data-sort-value="23&nbsp;!">Depends on gap sequence;<br>best known is <span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbf64515478331b8b655b5307576afcaeff3b297" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.55ex; height:2.676ex;" alt="{\displaystyle n^{1.25}}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -560,37 +228,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -601,47 +241,11 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC_%EC%A0%95%EB%A0%AC&amp;action=edit&amp;redlink=1" class="new" title="이진 트리 정렬 (없는 문서)">이진 트리 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span><wbr>(balanced)</span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span><wbr>(balanced)</span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -652,53 +256,11 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EC%82%AC%EC%9D%B4%ED%81%B4_%EC%A0%95%EB%A0%AC&amp;action=edit&amp;redlink=1" class="new" title="사이클 정렬 (없는 문서)">사이클 정렬</a>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -711,35 +273,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -754,19 +290,7 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -779,33 +303,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -818,37 +318,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
@@ -859,47 +331,11 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8_%EC%A0%95%EB%A0%AC&amp;action=edit&amp;redlink=1" class="new" title="토너먼트 정렬 (없는 문서)">토너먼트 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></span>
 </td>
@@ -912,37 +348,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -953,51 +361,11 @@
 <tr align="center">
 <td><a href="/wiki/%EB%B9%97%EC%A7%88_%EC%A0%95%EB%A0%AC" title="빗질 정렬">빗질 정렬</a>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -1010,37 +378,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -1068,33 +408,9 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -1107,33 +423,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
-<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
+<td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -1146,37 +438,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -1189,60 +453,11 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="00&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega (1)\cap {\mathcal {O}}(n)}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi mathvariant="normal">Ω<!-- Ω --></mi>
-        <mo stretchy="false">(</mo>
-        <mn>1</mn>
-        <mo stretchy="false">)</mo>
-        <mo>∩<!-- ∩ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi class="MJX-tex-caligraphic" mathvariant="script">O</mi>
-          </mrow>
-        </mrow>
-        <mo stretchy="false">(</mo>
-        <mi>n</mi>
-        <mo stretchy="false">)</mo>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \Omega (1)\cap {\mathcal {O}}(n)}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3befef5d2d2b9f1998a39f775b841ec62e3e68d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.286ex; height:2.843ex;" alt="{\displaystyle \Omega (1)\cap {\mathcal {O}}(n)}"></span></span>
+<td style="background:#fdd"><span data-sort-value="00&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3befef5d2d2b9f1998a39f775b841ec62e3e68d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.286ex; height:2.843ex;" alt="{\displaystyle \Omega (1)\cap {\mathcal {O}}(n)}"></span></span>
 </td>
 <td style="background:#dfd">예
 </td>
@@ -1266,57 +481,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+2^{k}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>k</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+2^{k}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec2a3b940ba9a9ad932d9ae1c0206ae0ceab86dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.486ex; height:2.843ex;" alt="{\displaystyle n+2^{k}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec2a3b940ba9a9ad932d9ae1c0206ae0ceab86dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.486ex; height:2.843ex;" alt="{\displaystyle n+2^{k}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+2^{k}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>k</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+2^{k}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec2a3b940ba9a9ad932d9ae1c0206ae0ceab86dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.486ex; height:2.843ex;" alt="{\displaystyle n+2^{k}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec2a3b940ba9a9ad932d9ae1c0206ae0ceab86dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.486ex; height:2.843ex;" alt="{\displaystyle n+2^{k}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{k}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>k</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle 2^{k}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d82641ae2702b0db07dd11830af27b9ee0cd196" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.251ex; height:2.676ex;" alt="2^{k}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d82641ae2702b0db07dd11830af27b9ee0cd196" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.251ex; height:2.676ex;" alt="2^{k}"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1327,49 +496,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+k}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>k</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+k}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94ccf8f07ceddde4d06fab179c36ccd2c264c243" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.446ex; height:2.343ex;" alt="n+k"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94ccf8f07ceddde4d06fab179c36ccd2c264c243" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.446ex; height:2.343ex;" alt="n+k"></span>
 </td>
-<td style="background:#fdd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}\cdot k}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mi>k</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}\cdot k}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a8e12aa598dc98f2fa9f5dcbb0f473710d35e41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.339ex; height:2.676ex;" alt="{\displaystyle n^{2}\cdot k}"></span>
+<td style="background:#fdd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a8e12aa598dc98f2fa9f5dcbb0f473710d35e41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.339ex; height:2.676ex;" alt="{\displaystyle n^{2}\cdot k}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot k}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mi>k</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot k}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6fba7993eed5a22ecab0c0008a16e2f81f260af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.285ex; height:2.176ex;" alt="{\displaystyle n\cdot k}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6fba7993eed5a22ecab0c0008a16e2f81f260af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.285ex; height:2.176ex;" alt="{\displaystyle n\cdot k}"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1380,44 +511,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1428,44 +526,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1476,59 +541,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+2^{d}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>d</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+2^{d}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1539,59 +556,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+2^{d}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>d</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+2^{d}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -1602,57 +571,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{d}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>d</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle 2^{d}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e78df590f3fc81f0201082eaaa6844c145c8bdf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.254ex; height:2.676ex;" alt="{\displaystyle 2^{d}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e78df590f3fc81f0201082eaaa6844c145c8bdf3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.254ex; height:2.676ex;" alt="{\displaystyle 2^{d}}"></span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">아니요
 </td>
@@ -1663,72 +586,11 @@
 </td>
 <td style="background:#dfd"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot \left({{\frac {k}{s}}+d}\right)}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow>
-          <mo>(</mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mrow class="MJX-TeXAtom-ORD">
-              <mfrac>
-                <mi>k</mi>
-                <mi>s</mi>
-              </mfrac>
-            </mrow>
-            <mo>+</mo>
-            <mi>d</mi>
-          </mrow>
-          <mo>)</mo>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot \left({{\frac {k}{s}}+d}\right)}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d48358944f0a173009b508f8e9699c87b382e86" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:12.599ex; height:6.176ex;" alt="{\displaystyle n\cdot \left({{\frac {k}{s}}+d}\right)}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d48358944f0a173009b508f8e9699c87b382e86" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:12.599ex; height:6.176ex;" alt="{\displaystyle n\cdot \left({{\frac {k}{s}}+d}\right)}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {k}{d}}\cdot 2^{d}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-        <mo>⋅<!-- ⋅ --></mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>d</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle {\frac {k}{d}}\cdot 2^{d}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd0c10465a6c1dbad72bbbf80315ea93de959895" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.986ex; height:5.509ex;" alt="{\displaystyle {\frac {k}{d}}\cdot 2^{d}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd0c10465a6c1dbad72bbbf80315ea93de959895" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.986ex; height:5.509ex;" alt="{\displaystyle {\frac {k}{d}}\cdot 2^{d}}"></span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">아니요
 </td>
@@ -1739,59 +601,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">아니요
 </td>
@@ -1802,34 +616,9 @@
 </td>
 <td style="background:#dfd"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+r}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <mi>r</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+r}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6a5e6925440ca0c67b8608c15b3fc842d6b3199" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.284ex; height:2.176ex;" alt="n+r"></span>
 </td>
-<td style="background:#fdd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span>
+<td style="background:#fdd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span>
 </td>
 <td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span>
 </td>
@@ -1842,59 +631,11 @@
 </td>
 <td>—
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td style="background:#dfd"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\cdot {\frac {k}{d}}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>⋅<!-- ⋅ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mfrac>
-            <mi>k</mi>
-            <mi>d</mi>
-          </mfrac>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\cdot {\frac {k}{d}}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
+<td style="background:#dfd"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53166c305a8b1af047f2e4c916c4fd8a304d40d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:5.126ex; height:5.509ex;" alt="{\displaystyle n\cdot {\frac {k}{d}}}"></span>
 </td>
-<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n+2^{d}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <mo>+</mo>
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>d</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n+2^{d}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
+<td><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b4a94f070d68b2a9f060bc5fd2baab07f1f1a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.49ex; height:2.843ex;" alt="{\displaystyle n+2^{d}}"></span>
 </td>
 <td>—
 </td>
@@ -1924,21 +665,7 @@
 </td>
 <td style="background:#ffd"><span data-sort-value="23&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">S</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"><small>빈칸</small>
 </td>
@@ -1953,18 +680,7 @@
 </td>
 <td><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td><span data-sort-value="05&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>log</mi>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span></span>
+<td><span data-sort-value="05&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/317ab5292da7c7935aec01a570461fe0613b21d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.754ex; height:2.509ex;" alt="{\displaystyle \log n}"></span></span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">아니요
 </td>
@@ -1979,21 +695,7 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{2}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{2}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
+<td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">예
 </td>
@@ -2002,78 +704,13 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EC%A0%95%EB%A0%AC%EB%A7%9D&amp;action=edit&amp;redlink=1" class="new" title="정렬망 (없는 문서)">정렬망</a>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="21&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span>
+<td><span data-sort-value="21&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span>
 </td>
 <td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">다양함 (안정 정렬망은 더 많은 비교가 요구된다)
 </td>
@@ -2082,78 +719,13 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EB%B0%94%EC%9D%B4%ED%86%A0%EB%8B%89_%EC%A0%95%EB%A0%AC&amp;action=edit&amp;redlink=1" class="new" title="바이토닉 정렬 (없는 문서)">바이토닉 정렬</a>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
+<td><span data-sort-value="06&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e34157f19d9344c513937dadab5cdc8fd86731dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.808ex; height:3.009ex;" alt="{\displaystyle \log ^{2}n}"></span></span>
 </td>
-<td><span data-sort-value="21&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\log ^{2}n}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>n</mi>
-        <msup>
-          <mi>log</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mn>2</mn>
-          </mrow>
-        </msup>
-        <mo>⁡<!-- ⁡ --></mo>
-        <mi>n</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n\log ^{2}n}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span>
+<td><span data-sort-value="21&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8dcc3d3ab4d647731efd75119a13e8febd1a7e44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.59ex; height:3.009ex;" alt="{\displaystyle n\log ^{2}n}"></span></span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">아니요
 </td>
@@ -2164,32 +736,9 @@
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="99&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n\times n!)}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mo stretchy="false">(</mo>
-        <mi>n</mi>
-        <mo>×<!-- × --></mo>
-        <mi>n</mi>
-        <mo>!</mo>
-        <mo stretchy="false">)</mo>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle (n\times n!)}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbae6d0fe4f4f73c8e3261b474927a92ac9fd9b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.086ex; height:2.843ex;" alt="{\displaystyle (n\times n!)}"></span></span>
+<td style="background:#fdd"><span data-sort-value="99&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbae6d0fe4f4f73c8e3261b474927a92ac9fd9b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.086ex; height:2.843ex;" alt="{\displaystyle (n\times n!)}"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="99&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \infty }">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi mathvariant="normal">∞<!-- ∞ --></mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \infty }</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c26c105004f30c27aa7c2a9c601550a4183b1f21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.324ex; height:1.676ex;" alt="\infty"></span></span>
+<td style="background:#fdd"><span data-sort-value="99&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c26c105004f30c27aa7c2a9c601550a4183b1f21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.324ex; height:1.676ex;" alt="\infty"></span></span>
 </td>
 <td style="background:#dfd"><span data-sort-value="00&nbsp;!">1</span>
 </td>
@@ -2200,77 +749,11 @@
 <tr align="center">
 <td><a href="/w/index.php?title=%EA%BC%AD%EB%91%90%EA%B0%81%EC%8B%9C_%EC%A0%95%EB%A0%AC&amp;action=edit&amp;redlink=1" class="new" title="꼭두각시 정렬 (없는 문서)">꼭두각시 정렬</a>
 </td>
-<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{\log 3/\log 1.5}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>3</mn>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mo>/</mo>
-            </mrow>
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>1.5</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{\log 3/\log 1.5}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
+<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{\log 3/\log 1.5}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>3</mn>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mo>/</mo>
-            </mrow>
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>1.5</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{\log 3/\log 1.5}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
+<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
 </td>
-<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{\log 3/\log 1.5}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mi>n</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>3</mn>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mo>/</mo>
-            </mrow>
-            <mi>log</mi>
-            <mo>⁡<!-- ⁡ --></mo>
-            <mn>1.5</mn>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle n^{\log 3/\log 1.5}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
+<td style="background:#fdd"><span data-sort-value="30&nbsp;!"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4de187624d1b78cfc152f4b1fd4eb669c4f5a9fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:10.736ex; height:2.843ex;" alt="{\displaystyle n^{\log 3/\log 1.5}}"></span></span>
 </td>
 <td style="background:#fdd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
