@@ -58,7 +58,7 @@
 <tbody>
   <tr align="center">
     <td>
-      <a href="/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC" title="퀵 정렬">퀵 정렬</a>
+      <a href="/Algorithm/Sorting/Quicksort.md" title="퀵 정렬">퀵 정렬</a>
     </td>
     <td>
       <span data-sort-value="15&nbsp;!">
