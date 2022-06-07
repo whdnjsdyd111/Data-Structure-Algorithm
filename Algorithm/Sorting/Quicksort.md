@@ -22,3 +22,31 @@
 최선|평균|최악|메모리|안정|방식|
 ---|---|---|---|---|---|
 nlogn|O(nlogn)|O(n²)|평균 O(logn), 최악 O(n)|불안정|파티셔닝|
+
+# 퀵 정렬 구현
+
+![image](https://user-images.githubusercontent.com/66655578/172367967-9d5cfba9-722a-4bcd-9500-aba7f9274742.png)
+
+```java
+public static void quickSort(int[] arr, int left, int right) {
+    int l, r, pivot, tmp;
+    if (left < right) {
+        l = left;   r = right;
+        pivot = arr[(l+r)/2];
+        //분할 과정
+        while (l < r) {
+            while (arr[r] > pivot) r--;
+            while (l < r && arr[l] < pivot) l++;
+
+            tmp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = tmp;
+        }
+
+        //정렬 과정 재귀
+        quickSort(arr, left, l - 1);
+        quickSort(arr, l + 1, right);
+    }
+}
+```
+
