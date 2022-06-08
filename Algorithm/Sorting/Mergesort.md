@@ -24,3 +24,28 @@
 최선|평균|최악|메모리|안정|방식|
 ---|---|---|---|---|---|
 nlogn|nlogn|nlogn|n|안정|합병|
+
+# 병합 정렬 구현
+
+![image](https://user-images.githubusercontent.com/66655578/172599132-e616f778-bfab-47c9-b12f-1a784e6c8277.png)
+
+```java
+public static void mergeSort(int[] a, int left, int right, int[] b) {
+  if(left >= right) return;
+
+  int mid = (left + right) / 2;	// 1. 분할
+
+  mergeSort(a, left, mid, b);		// 2. 정복
+  mergeSort(a, mid+1, right, b);
+
+  int i = left, j = mid + 1, k = left;	// 3. 결합 i - 배열 1 인덱스, j - 배열 2 인덱스
+  for(; k <= right; ++k) {
+    if(i > mid) b[k] = a[j++];			// 배열 1 인덱스가 마지막까지 갔다면 배열 2 값을 선택해 넣음
+    else if(j > right) b[k] = a[i++];	// 배열 2 인덱스가 마지막까지 갔다면 배열 1 값을 선택해 넣음
+    else if(a[i] <= a[j]) b[k] = a[i++];// 두 배열 중 작은 값을 선택해 넣음
+    else b[k] = a[j++];					// 두 배열 중 작은 값을 선택해 넣음
+  }
+
+  for(i = left; i <= right; ++i) a[i] = b[i];	// 4. 복사
+}
+```
