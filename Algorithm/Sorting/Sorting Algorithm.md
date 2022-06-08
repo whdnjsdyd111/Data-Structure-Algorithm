@@ -88,7 +88,7 @@
 <td>파티셔닝
 </td></tr>
 <tr align="center">
-<td><a href="/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC" title="합병 정렬">합병 정렬</a>
+<td><a href="/Algorithm/Sorting/Mergesort.md" title="합병 정렬">합병 정렬</a>
 </td>
 <td style="background:#dfd"><span data-sort-value="20&nbsp;!"><span class="mwe-math-element">
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
