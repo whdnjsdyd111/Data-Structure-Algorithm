@@ -134,7 +134,7 @@
 <td>선택
 </td></tr>
 <tr align="center">
-<td><a href="/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC" title="삽입 정렬">삽입 정렬</a>
+<td><a href="/Algorithm/Sorting/Insertionsort.md" title="삽입 정렬">삽입 정렬</a>
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
