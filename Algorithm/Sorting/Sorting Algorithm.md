@@ -164,7 +164,7 @@
 <td>파티셔닝, 선택
 </td></tr>
 <tr align="center">
-<td><a href="/wiki/%EC%84%A0%ED%83%9D_%EC%A0%95%EB%A0%AC" title="선택 정렬">선택 정렬</a>
+<td><a href="/Algorithm/Sorting/Selectionsort.md" title="선택 정렬">선택 정렬</a>
 </td>
 <td style="background:#fdd"><span data-sort-value="25&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac9810bbdafe4a6a8061338db0f74e25b7952620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.449ex; height:2.676ex;" alt="n^2"></span></span>
 </td>
