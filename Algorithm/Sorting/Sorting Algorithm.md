@@ -224,7 +224,7 @@
 <td>삽입
 </td></tr>
 <tr align="center">
-<td><a href="/wiki/%EA%B1%B0%ED%92%88_%EC%A0%95%EB%A0%AC" title="거품 정렬">거품 정렬</a>
+<td><a href="/Algorithm/Sorting/Bubblesort.md" title="거품 정렬">거품 정렬</a>
 </td>
 <td style="background:#dfd"><span data-sort-value="15&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span>
 </td>
