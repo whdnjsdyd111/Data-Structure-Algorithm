@@ -119,7 +119,7 @@
 <td>합병
 </td></tr>
 <tr align="center">
-<td><a href="/wiki/%ED%9E%99_%EC%A0%95%EB%A0%AC" title="힙 정렬">힙 정렬</a>
+<td><a href="/Algorithm/Sorting/Heapsort.md" title="힙 정렬">힙 정렬</a>
 </td>
 <td style="background:#dfd"><span data-sort-value="20&nbsp;!"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r25030363"><span class="texhtml" style="font-style: italic;">n</span></span><br>모든 키가 구별되는 경우, <span data-sort-value="20&nbsp;!"><span class="mwe-math-element"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/560dfdce0353a330e03e4b3e0b7ca6e484bb40fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.535ex; height:2.509ex;" alt="{\displaystyle n\log n}"></span></span>
 </td>
