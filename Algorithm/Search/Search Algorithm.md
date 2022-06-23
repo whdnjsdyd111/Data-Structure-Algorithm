@@ -24,3 +24,4 @@
 ---|---|---|---|
 [선형 탐색](/Algorithm/Search/Linear%20Search.md)|O(1)|O(n)|O(¾n)|
 [이진 탐색](/Algorithm/Search/Binary%20Search.md)|O(1)|O(logn)|O(logn)|
+[점프 탐색](/Algorithm/Search/Jump%20Search.md)|O(1)|O(√n)|O(n)|
