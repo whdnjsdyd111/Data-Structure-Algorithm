@@ -27,3 +27,11 @@
 [점프 탐색](/Algorithm/Search/Jump%20Search.md)|O(1)|O(√n)|O(n)|
 [보간 탐색](/Algorithm/Search/Interpolation%20Search.md)|O(1)|O(log(logn))|O(n)|
 [지수 탐색](/Algorithm/Search/Exponential%20Search.md)|O(1)|O(logn)|O(logn)|
+
+<hr>
+
+**그래프 탐색**
+
+이름|동작원리|구현방법|시간복잡도|
+---|---|---|---|
+[DFS](/Algorithm/Search/Depth%20First%20Search.md)|깊이 우선 탐색|스택|인접리스트 - O(V + E)<br>인접행렬 - O(V²)|
