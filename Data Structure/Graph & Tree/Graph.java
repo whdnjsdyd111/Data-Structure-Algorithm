@@ -147,4 +147,16 @@ public interface Graph<V, E> {
 	 * @return
 	 */
 	boolean visitEdge(Edge<V, E> e);
+	
+	/**
+	 * 
+	 * @param v 시작 정점
+	 */
+	void DFS(V v);
+
+	/**
+	 * 
+	 * @param v 시작 정점
+	 */
+	void BFS(V v);
 }
