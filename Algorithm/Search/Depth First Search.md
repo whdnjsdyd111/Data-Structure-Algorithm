@@ -30,11 +30,11 @@
 [Graph.java](https://github.com/whdnjsdyd111/Data-Structure-Algorithm/blob/main/Data%20Structure/Graph%20%26%20Tree/Graph.java)에서 다음과 같이 DFS 메소드를 추가한다.
 
 ```java
-	/**
-	 * 
-	 * @param v 시작 정점
-	 */
-	void DFS(V v);
+/**
+ * 
+ * @param v 시작 정점
+ */
+void DFS(V v);
 ```
 
 위 메소드는 [GraphList.java](https://github.com/whdnjsdyd111/Data-Structure-Algorithm/blob/main/Data%20Structure/Graph%20%26%20Tree/GraphList%20%EA%B5%AC%ED%98%84.md)에서 구현한다.
