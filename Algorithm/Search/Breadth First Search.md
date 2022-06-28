@@ -38,3 +38,46 @@ void BFS(V v);
 위 메소드는 [GraphList.java](https://github.com/whdnjsdyd111/Data-Structure-Algorithm/blob/main/Data%20Structure/Graph%20%26%20Tree/GraphList%20%EA%B5%AC%ED%98%84.md)에서 구현한다.
 
 구현하기에 앞서 다음 이미지를 1 부터 BFS 방식으로 모든 노드를 탐색한다고 해보자.
+
+![image](https://user-images.githubusercontent.com/66655578/176192185-163c1cd7-634d-4878-a146-0e393cee33be.png)
+
+![image](https://user-images.githubusercontent.com/66655578/176210792-39bc74ea-a000-436b-802e-3c36f335290d.png)
+
+![image](https://user-images.githubusercontent.com/66655578/176211276-7858965c-ac26-4f14-8749-25f4872a8367.png)
+
+![image](https://user-images.githubusercontent.com/66655578/176211432-6b094d04-7306-4dbb-9a6a-40715a60ecc5.png)
+
+![image](https://user-images.githubusercontent.com/66655578/176211591-80c5bc05-b4f9-4967-b821-fe22d7d7231f.png)
+
+![image](https://user-images.githubusercontent.com/66655578/176211658-fc40664f-794c-49ad-80ef-5ca2e96d602b.png)
+
+```java
+@Override
+public void BFS(V v) {
+  GraphListVertex<V, E> start = dict.get(v);	// 시작 정점
+
+  Queue<GraphListVertex<V, E>> queue = new LinkedList<>();	// 큐 생성
+
+  queue.add(start);	// 시작 정점 방문 후 큐 넣기
+  start.visit();
+
+  StringBuffer sb = new StringBuffer();
+
+  while(!queue.isEmpty()) {
+    GraphListVertex<V, E> gv = queue.poll();
+    sb.append(gv.label + " -> ");
+
+    Iterator<V> iterator = gv.adjacentVertices();	// 주변 정점 조회
+    while(iterator.hasNext()) {
+      GraphListVertex<V, E> g = dict.get(iterator.next());
+      if(!g.visited) {
+        queue.add(g);
+        g.visit();
+      }
+    }
+  }
+
+  reset();
+  System.out.println(sb.toString());
+}
+```
