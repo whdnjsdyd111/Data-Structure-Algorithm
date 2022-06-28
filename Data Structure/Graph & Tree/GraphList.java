@@ -160,12 +160,12 @@ public abstract class GraphList<V, E> implements Graph<V, E> {
 	/**
 	 * 정점 제거
 	 */
-	abstract public V remove(V vtx);
+	abstract public boolean remove(V vtx);
 
 	/**
 	 * 간선 제거
 	 */
-	abstract public E removeEdge(V vtx1, V vtx2);
+	abstract public boolean removeEdge(V vtx1, V vtx2);
 
 	/**
 	 * 정점과 간선들의 방문 여부를 리셋
