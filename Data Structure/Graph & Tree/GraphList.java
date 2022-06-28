@@ -209,5 +209,70 @@ public abstract class GraphList<V, E> implements Graph<V, E> {
 	public boolean visitEdge(Edge<V, E> e) {
 		return e.visit();
 	}
+	
+	
+	@Override
+	public void BFS(V v) {
+		GraphListVertex<V, E> start = dict.get(v);	// 시작 정점
+		
+		Queue<GraphListVertex<V, E>> queue = new LinkedList<>();	// 큐 생성
+		
+		queue.add(start);	// 시작 정점 방문 후 큐 넣기
+		start.visit();
+		
+		StringBuffer sb = new StringBuffer();
+		
+		while(!queue.isEmpty()) {
+			GraphListVertex<V, E> gv = queue.poll();
+			sb.append(gv.label + " -> ");
+			
+			Iterator<V> iterator = gv.adjacentVertices();	// 주변 정점 조회
+			while(iterator.hasNext()) {
+				GraphListVertex<V, E> g = dict.get(iterator.next());
+				if(!g.visited) {
+					queue.add(g);
+					g.visit();
+				}
+			}
+		}
+		
+		reset();
+		System.out.println(sb.toString());
+	}
+	
+	@Override
+	public void DFS(V v) {
+		GraphListVertex<V, E> start = dict.get(v);	// 시작 지점 정점 얻기
+		
+		Stack<GraphListVertex<V, E>> stack = new Stack<>();	// 스택 생성
+		
+		stack.push(start);	// 시작 정점 방문 후 스택 쌓기
+		start.visit();
+
+		StringBuffer sb = new StringBuffer(v + " -> ");
+		
+		while(!stack.empty()) {	// 스택이 없어질 때 까지 반복
+			GraphListVertex<V, E> gv = stack.peek();
+			
+			Iterator<V> iterator = gv.adjacentVertices();	// 주변 정점 조회
+			boolean check = false;	// 스택 추가한 정점이 있는지 체크
+			while(iterator.hasNext()) {
+				GraphListVertex<V, E> g = dict.get(iterator.next());
+				if(!g.visited) {	// 방문하지 않은 정점 스택 쌓은 후, 방문하기
+					stack.push(g);
+					g.visit();
+					sb.append(g.label + " -> ");
+					check = true;
+					break;
+				}
+			}
+			
+			if(!check) sb.append("( pop " + stack.pop().label() + " ) ");	// 방문한 정점이 없다면 스택 팝
+		}
+		
+		reset();	// 방문 플래그를 리셋
+		System.out.println(sb.toString());
+		
+	}
 
 }
